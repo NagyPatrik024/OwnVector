@@ -6,9 +6,9 @@ namespace oe {
 	{
 	public:
 		vector() = default;
-		vect
+		vector(const size_t size);
 	private:
-		T mData = nullptr;
+		T* mData = nullptr;
 		size_t mSize = 0;
 		size_t mCapacity = 0;
 	};
