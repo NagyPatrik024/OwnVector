@@ -13,5 +13,14 @@ namespace oe {
 		size_t mCapacity = 0;
 	};
 
+	template<typename T>
+	vector<T>::vector(const size_t size)
+		: mData(new T[size])
+		, mSize(size)
+		, mCapacity(size)
+	{
+
+	}
+
 }
 
